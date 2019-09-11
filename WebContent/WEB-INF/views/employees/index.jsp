@@ -22,10 +22,10 @@
 						<td><c:out value="${employee.name}" /></td>
 						<td><c:choose>
 								<c:when test="${employee.delete_flag == 1}">
-
+                                (削除済み)
 								</c:when>
 								<c:otherwise>
-									<a href="<c:url value='/employees/show?id=${employee.id}' />"></a>
+									<a href="<c:url value='/employees/show?id=${employee.id}' />">詳細を表示</a>
 								</c:otherwise>
 							</c:choose></td>
 					</tr>
