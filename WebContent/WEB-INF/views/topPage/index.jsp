@@ -9,4 +9,4 @@
         </c:if>
         <h2>日報管理システムへようこそ</h2>
     </c:param>
-</c:import>>
+</c:import>
