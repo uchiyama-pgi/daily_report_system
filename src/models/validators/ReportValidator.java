@@ -34,7 +34,21 @@ public class ReportValidator {
         if(content == null || content.equals("")) {
             return "内容を入力してください。";
             }
-
         return "";
     }
+/*
+    private static String _validateGo(Time go) {
+        if( go == null || go.equals("")) {
+            return "出勤時刻を入力してください。";
+            }
+        return "";
+    }
+
+    private static String _validateRetire(Time retire) {
+        if(retire == null || retire.equals("")) {
+            return "退勤時刻をを入力してください。";
+            }
+        return "";
+    }
+    */
 }

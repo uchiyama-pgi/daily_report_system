@@ -1,6 +1,7 @@
 package models;
 
 import java.sql.Date;
+import java.sql.Time;
 import java.sql.Timestamp;
 
 import javax.persistence.Column;
@@ -43,6 +44,13 @@ public class Report {
     @Lob
     @Column(name = "content", nullable = false)
     private String content;
+
+    //応用
+    @Column(name = "go", nullable = false)
+    private Time go;
+
+    @Column(name = "retire", nullable = false)
+    private Time retire;
 
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
@@ -88,6 +96,22 @@ public class Report {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Time getGo() {
+        return go;
+    }
+
+    public void setGo(Time go) {
+        this.go = go;
+    }
+
+    public Time getRetire() {
+        return retire;
+    }
+
+    public void setRetire(Time retire) {
+        this.retire = retire;
     }
 
     public Timestamp getCreated_at() {
